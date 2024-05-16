@@ -7,7 +7,7 @@ const data = [
     mantras: 'I am grounded. I am strong, supported and abundant',
     infos: '',
     activities: '',
-    color: 'red',
+    color: '#ec2127',
   },
   {
     id: 2,
@@ -17,7 +17,7 @@ const data = [
     mantras: ' I am creative. I am the creator of all my reality.',
     infos: '',
     activities: '',
-    color: 'orange',
+    color: '#f15b22',
   },
   {
     id: 3,
@@ -27,7 +27,7 @@ const data = [
     mantras: 'I am powerful. I am worthy of pursuing my passion and purpose',
     infos: '',
     activities: '',
-    color: 'yellow',
+    color: '#ffcb06',
   },
   {
     id: 4,
@@ -37,7 +37,7 @@ const data = [
     mantras: 'I am Love. I give love, I am open to love.',
     infos: '',
     activities: '',
-    color: 'green',
+    color: '#19a448',
   },
   {
     id: 5,
@@ -48,7 +48,7 @@ const data = [
       'I am expressive. I am in agreement with my truth. I speak with clarity and intention',
     infos: '',
     activities: '',
-    color: 'aqua',
+    color: '#2aace3',
   },
   {
     id: 6,
@@ -59,7 +59,7 @@ const data = [
       'I am intuitive. I am connected with my spirit and I trust my intuition.',
     infos: '',
     activities: '',
-    color: 'blue',
+    color: '#5643a3',
   },
   {
     id: 7,
@@ -70,7 +70,7 @@ const data = [
       'I am divine. I am one with the divine. I honor the divine in me and around me',
     infos: '',
     activities: '',
-    color: 'violet',
+    color: '#5643a3',
   },
 ];
 
