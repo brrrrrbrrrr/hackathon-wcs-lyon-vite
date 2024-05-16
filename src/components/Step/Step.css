@@ -27,3 +27,29 @@
 .right {
   /* Your code here */
 }
+
+.fadeIn {
+  animation: fadeInAnimation 1s forwards; /* Utilisation de "forwards" pour que l'opacité reste à 1 à la fin de l'animation */
+}
+
+.fadeOut {
+  animation: fadeOutAnimation 0.2s forwards; /* Utilisation de "forwards" pour que l'opacité reste à 0 à la fin de l'animation */
+}
+
+@keyframes fadeOutAnimation {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

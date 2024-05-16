@@ -1,12 +1,17 @@
 /* eslint-disable react/prop-types */
 import './Card.css';
-const Card = ({ chakra, setActiveModal }) => {
-  // console.log('chacra comp', chakra);
+const Card = ({ chakra, setActiveModal, activeModal, handleSucces }) => {
+  console.log('activeModal ! ', activeModal);
   return (
     <div className='modal-container'>
-      <div className='card-container'>
+      <div
+        className={`card-container gradient-border
+       
+
+        `}
+      >
         <div className='close-modal' onClick={() => setActiveModal(false)}>
-          X
+          &#x2716;
         </div>
         <div className='title-logo_container'>
           <h1>{chakra.nameS} </h1>
@@ -33,6 +38,14 @@ const Card = ({ chakra, setActiveModal }) => {
           <div className='img-stone_container'>
             <img src={chakra.stoneImg} alt='' className='img-stone' />
           </div>
+        </div>
+        <div className='btn-check_container'>
+          <button
+            onClick={() => handleSucces(chakra.id)}
+            className='btn-succes'
+          >
+            Succes
+          </button>
         </div>
       </div>
     </div>
