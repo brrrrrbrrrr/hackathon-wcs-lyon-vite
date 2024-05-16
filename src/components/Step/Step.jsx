@@ -1,28 +1,40 @@
-import "../Step/Step.css"
-import { useLoaderData } from "react-router-dom";
-import Chakras from '../../data//data'
-import { Link } from "react-router-dom";
+import '../Step/Step.css';
+import { useLoaderData } from 'react-router-dom';
+import Chakras from '../../data//data';
 
-export default function Step () {
+import { useState } from 'react';
+import Card from '../card/Card';
 
-    const data= useLoaderData();
-    console.log(data);
+export default function Step() {
+  const [chakra, setChacra] = useState();
+  const [activeModal, setActiveModal] = useState(false);
+  const data = useLoaderData();
+  console.log(data);
 
-    return (
-    <>
+  const getElement = (el) => {
+    // console.log('id :', id);
+    setActiveModal(true);
+    setChacra(el);
+    console.log('el :', el);
+  };
 
- 
-{Chakras.slice().reverse().map((chakra) => (
-  <div className="chakras_container" key={chakra.id}>
-    <Link className="style_link_chakras" to={`/${Step}`}>
-    <button className="button_step" style={{ backgroundColor: chakra.color }}>
-  {chakra.id}
-</button>
-    </Link> 
-  </div>
-))}
+  return (
+    <div className='step-container'>
+      {Chakras.slice()
+        .reverse()
+        .map((chakra) => (
+          <div className='chakras_container' key={chakra.id}>
+            <button
+              className='button_step'
+              onClick={() => getElement(chakra)}
+              style={{ backgroundColor: chakra.color }}
+            >
+              {chakra.id}
+            </button>
+          </div>
+        ))}
 
-    </>
-
-    );
+      {activeModal && <Card chakra={chakra} setActiveModal={setActiveModal} />}
+    </div>
+  );
 }
