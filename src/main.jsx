@@ -6,22 +6,28 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import data from './data/data.js';
 import Home from './components/home/Home.jsx';
 import Step from './components/Step/Step.jsx';
+import DataGraph from './components/datagraph/DataGraph.jsx';
 
 const router = createBrowserRouter([
   {
     element: <App />,
     children: [
       {
-        path: '/',
+        path: "/",
         element: <Home />,
       },
 
       {
-        path: '/chakras',
+        path: "/chakras",
         element: <Step />,
         loader: async () => {
           return data;
         },
+      },
+
+      {
+        path: "/datagraph",
+        element: <DataGraph />,
       },
     ],
   },
