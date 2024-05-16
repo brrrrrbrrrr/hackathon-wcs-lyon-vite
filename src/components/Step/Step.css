@@ -1,12 +1,22 @@
-
 .button_step {
-    display: block;
-    border-radius: 100%;
-    border: none;
-    height: 50px;
-    width: 50px;
-    margin: 0;  
-    background-color: green;
-    color : white ;
-    
+  display: block;
+  border-radius: 100%;
+  border: none;
+  height: 50px;
+  width: 50px;
+  margin: 0;
+  background-color: green;
+  color: white;
+}
+
+.left {
+  /* Your code here */
+}
+
+.middle {
+  /* Your code here */
+}
+
+.right {
+  /* Your code here */
 }
