@@ -1,13 +1,31 @@
-.home-container {
-  width: 100%;
-  height: 100vh;
+/* .amatic-sc-regular {
+  font-family: "Amatic SC", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
-.logo-container {
+.amatic-sc-bold {
+  font-family: "Amatic SC", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+} */
+
+
+
+.home-container {
+  padding: 10vh;
+  width: 100%;
+  height: 100vh;
+  background: rgb(148, 154, 191);
+  background: linear-gradient(0deg, rgba(148, 154, 191, 1) 5%, rgba(253, 232, 221, 1) 29%, rgba(246, 247, 247, 1) 76%);
+  
+}
+
+/* .logo-container {
   width: 200px;
   height: 200px;
   margin: 50px auto;
-}
+} */
 
 .logo {
   width: 100%;
@@ -15,7 +33,12 @@
 }
 
 .p-content {
-  text-align: center;
+  text-align:center;
+  font-family: "Amatic SC", sans-serif;
+  color:#7CABA0;
+  font-weight: 200wh;
+  font-style: normal;
+  font-size: 5vh;
 }
 
 .button-container {
@@ -26,4 +49,16 @@
 
 .btn {
   margin: auto;
+  padding: 1vh;
+  padding-left:5vh;
+  padding-right: 5vh;
+  border-radius: 1vh;
+  border: none;
+  box-shadow: 4px 4px 9px 0px rgba(26, 36, 34, 0.24);
+  background-color: #FDE8DD;
+  font-family: "Montserrat", sans-serif;
+  color: #949ABF;
+  
 }
+
+
