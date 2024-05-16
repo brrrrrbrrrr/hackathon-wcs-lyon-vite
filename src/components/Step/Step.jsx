@@ -1,8 +1,9 @@
 import '../Step/Step.css';
 import { useLoaderData } from 'react-router-dom';
 import Chakras from '../../data//data';
-import Card from '../card/Card';
+
 import { useState } from 'react';
+import Card from '../card/Card';
 
 export default function Step() {
   const [chakra, setChacra] = useState();
@@ -19,20 +20,19 @@ export default function Step() {
 
   return (
     <div className='step-container'>
-      {Chakras.map((chakra) => (
-        <div key={chakra.id}>
-          {/* <Link className="style_link_chakras" to={`/${chakra.id}`}> */}
-          <button
-            onClick={() => getElement(chakra)}
-            className={`button_step ${chakra.position}`}
-            style={{ backgroundColor: chakra.color }}
-          >
-            {chakra.id}
-          </button>
-
-          {/* </Link> */}
-        </div>
-      ))}
+      {Chakras.slice()
+        .reverse()
+        .map((chakra) => (
+          <div className='chakras_container' key={chakra.id}>
+            <button
+              className='button_step'
+              onClick={() => getElement(chakra)}
+              style={{ backgroundColor: chakra.color }}
+            >
+              {chakra.id}
+            </button>
+          </div>
+        ))}
 
       {activeModal && <Card chakra={chakra} setActiveModal={setActiveModal} />}
     </div>

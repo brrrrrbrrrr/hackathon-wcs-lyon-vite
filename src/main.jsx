@@ -6,7 +6,8 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import data from './data/data.js';
 import Home from './components/home/Home.jsx';
 import Step from './components/Step/Step.jsx';
-import Card from './components/card/Card.jsx';
+
+import DataGraph from './components/datagraph/DataGraph.jsx';
 
 const router = createBrowserRouter([
   {
@@ -16,10 +17,6 @@ const router = createBrowserRouter([
         path: '/',
         element: <Home />,
       },
-      {
-        path: '/dev',
-        element: <Card />,
-      },
 
       {
         path: '/chakras',
@@ -27,6 +24,11 @@ const router = createBrowserRouter([
         loader: async () => {
           return data;
         },
+      },
+
+      {
+        path: '/datagraph',
+        element: <DataGraph />,
       },
     ],
   },
