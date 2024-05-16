@@ -6,6 +6,14 @@ import chakra5 from '../assets/logoschakras/chakra5.png';
 import chakra6 from '../assets/logoschakras/chakra6.png';
 import chakra7 from '../assets/logoschakras/chakra7.png';
 
+import redjasper from '../assets/stones/red-jasper.png';
+import carnelian from '../assets/stones/carnelian.png';
+import citrine from '../assets/stones/citrine.png';
+import rosequartz from '../assets/stones/RoseQuartz.png';
+import bluelaceagate from '../assets/stones/bluelaceagatestone.webp';
+import amethyst from '../assets/stones/Amethyst.png';
+import clearquartz from '../assets/stones/ClearQuartz.png';
+
 const data = [
   {
     id: 1,
@@ -14,20 +22,26 @@ const data = [
     nameEn: 'Root',
     mantras: 'I am grounded. I am strong, supported and abundant',
     infos: '',
-    activities: '',
+    activities: 'Yoga, hiking, gardening',
+    suggestedActivities: 'Walking barefoot in nature, Grounding meditation',
     color: '#ec2127',
     position: 'left',
+    stone: 'Red Jasper',
+    stoneImg: redjasper,
   },
   {
     id: 2,
     logo: chakra2,
     nameS: 'Svadhishtana',
     nameEn: 'Sacral',
-    mantras: ' I am creative. I am the creator of all my reality.',
+    mantras: 'I am creative. I am the creator of all my reality.',
     infos: '',
-    activities: '',
+    activities: 'Dancing, painting, swimming',
+    suggestedActivities: 'Creative writing, Sensual movement practice',
     color: '#f15b22',
     position: 'middle',
+    stone: 'Carnelian',
+    stoneImg: carnelian,
   },
   {
     id: 3,
@@ -36,9 +50,12 @@ const data = [
     nameEn: 'Solar Plexus',
     mantras: 'I am powerful. I am worthy of pursuing my passion and purpose',
     infos: '',
-    activities: '',
+    activities: 'Martial arts, cooking, core exercises',
+    suggestedActivities: 'Empowerment workshop, Setting and achieving goals',
     color: '#ffcb06',
-    position: 'rigth',
+    position: 'right',
+    stone: 'Citrine',
+    stoneImg: citrine,
   },
   {
     id: 4,
@@ -47,9 +64,13 @@ const data = [
     nameEn: 'Heart',
     mantras: 'I am Love. I give love, I am open to love.',
     infos: '',
-    activities: '',
+    activities:
+      'Volunteering, spending time with loved ones, practicing gratitude',
+    suggestedActivities: 'Heart-opening yoga poses, Random acts of kindness',
     color: '#19a448',
     position: 'middle',
+    stone: 'Rose Quartz',
+    stoneImg: rosequartz,
   },
   {
     id: 5,
@@ -59,9 +80,12 @@ const data = [
     mantras:
       'I am expressive. I am in agreement with my truth. I speak with clarity and intention',
     infos: '',
-    activities: '',
+    activities: 'Singing, public speaking, journaling',
+    suggestedActivities: 'Throat chakra meditation, Screaming into the void',
     color: '#2aace3',
     position: 'left',
+    stone: 'Blue Lace Agate',
+    stoneImg: bluelaceagate,
   },
   {
     id: 6,
@@ -71,21 +95,27 @@ const data = [
     mantras:
       'I am intuitive. I am connected with my spirit and I trust my intuition.',
     infos: '',
-    activities: '',
+    activities: 'Meditation, stargazing, dream journaling',
+    suggestedActivities: 'Visualization exercises, Mindfulness practices',
     color: '#5643a3',
     position: 'middle',
+    stone: 'Amethyst',
+    stoneImg: amethyst,
   },
   {
     id: 7,
     logo: chakra7,
     nameS: 'Sahasrara',
-    nameEn: 'Crow',
+    nameEn: 'Crown',
     mantras:
       'I am divine. I am one with the divine. I honor the divine in me and around me',
     infos: '',
-    activities: '',
+    activities: 'Prayer, meditation, studying philosophy',
+    suggestedActivities: 'Silent retreat, Connecting with spiritual community',
     color: '#5643a3',
     position: 'right',
+    stone: 'Clear Quartz',
+    stoneImg: clearquartz,
   },
 ];
 

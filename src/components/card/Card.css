@@ -5,6 +5,8 @@
   height: 90vh;
   top: 10px;
   right: 15px;
+  padding: 10px;
+
   .close-modal {
     text-align: end;
     padding: 10px;
@@ -25,7 +27,6 @@
   width: 100%;
   display: flex;
   justify-content: space-between;
-  padding: 10px;
 }
 
 .logo-chakra {
@@ -35,12 +36,31 @@
 .infos-body_container {
   width: 100%;
   display: flex;
+
   .mantra {
     width: 70%;
-    padding: 10px;
   }
   .body-img_container {
     background-color: red;
     width: 30%;
+  }
+}
+
+h4 {
+  margin-top: 20px;
+}
+
+.stone-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .img-stone_container {
+    width: 30%;
+
+    .img-stone {
+      width: 100%;
+    }
   }
 }
