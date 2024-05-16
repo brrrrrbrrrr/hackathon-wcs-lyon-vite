@@ -1,47 +1,59 @@
+import chakra1 from '../assets/logoschakras/chakra1.png';
+import chakra2 from '../assets/logoschakras/chakra2.png';
+import chakra3 from '../assets/logoschakras/chakra3.png';
+import chakra4 from '../assets/logoschakras/chakra4.png';
+import chakra5 from '../assets/logoschakras/chakra5.png';
+import chakra6 from '../assets/logoschakras/chakra6.png';
+import chakra7 from '../assets/logoschakras/chakra7.png';
+
 const data = [
   {
     id: 1,
-    logo: '',
+    logo: chakra1,
     nameS: 'Muladhara',
     nameEn: 'Root',
     mantras: 'I am grounded. I am strong, supported and abundant',
     infos: '',
     activities: '',
     color: '#ec2127',
+    position: 'left',
   },
   {
     id: 2,
-    logo: '',
+    logo: chakra2,
     nameS: 'Svadhishtana',
     nameEn: 'Sacral',
     mantras: ' I am creative. I am the creator of all my reality.',
     infos: '',
     activities: '',
     color: '#f15b22',
+    position: 'middle',
   },
   {
     id: 3,
-    logo: '',
+    logo: chakra3,
     nameS: 'Manipura',
     nameEn: 'Solar Plexus',
     mantras: 'I am powerful. I am worthy of pursuing my passion and purpose',
     infos: '',
     activities: '',
     color: '#ffcb06',
+    position: 'rigth',
   },
   {
     id: 4,
-    logo: '',
+    logo: chakra4,
     nameS: 'Anahata',
     nameEn: 'Heart',
     mantras: 'I am Love. I give love, I am open to love.',
     infos: '',
     activities: '',
     color: '#19a448',
+    position: 'middle',
   },
   {
     id: 5,
-    logo: '',
+    logo: chakra5,
     nameS: 'Vishudda',
     nameEn: 'Throat',
     mantras:
@@ -49,10 +61,11 @@ const data = [
     infos: '',
     activities: '',
     color: '#2aace3',
+    position: 'left',
   },
   {
     id: 6,
-    logo: '',
+    logo: chakra6,
     nameS: 'Ajna',
     nameEn: 'Third Eye',
     mantras:
@@ -60,10 +73,11 @@ const data = [
     infos: '',
     activities: '',
     color: '#5643a3',
+    position: 'middle',
   },
   {
     id: 7,
-    logo: '',
+    logo: chakra7,
     nameS: 'Sahasrara',
     nameEn: 'Crow',
     mantras:
@@ -71,6 +85,7 @@ const data = [
     infos: '',
     activities: '',
     color: '#5643a3',
+    position: 'right',
   },
 ];
 

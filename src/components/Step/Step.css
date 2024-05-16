@@ -1,26 +1,29 @@
-
 .button_step {
-    display: block;
-    border-radius: 100%;
-    border: none;
-    height: 50px;
-    width: 50px;
-    margin: 0;  
-    background-color: green;
-    color : white;
-    margin-top: 8px ;
-    margin-bottom: 8px ;
-    
-
-    
+  display: block;
+  border-radius: 100%;
+  border: none;
+  height: 50px;
+  width: 50px;
+  margin: 0;
+  background-color: green;
+  color: white;
+  margin-top: 8px;
+  margin-bottom: 8px;
 }
 .chakras_container {
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: center ;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+}
 
-    
+.left {
+  /* Your code here */
+}
 
-   
-    
+.middle {
+  /* Your code here */
+}
+
+.right {
+  /* Your code here */
 }
