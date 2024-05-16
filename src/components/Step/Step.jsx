@@ -20,7 +20,7 @@ export default function Step() {
   const handleSucces = (id) => {
     setChacraData(
       chakraData.map((el) =>
-        el.id === id ? { ...el, color: `${el.color}80` } : el
+        el.id === id ? { ...el, color: `${el.color.slice(0, -2)}10` } : el
       )
     );
     setIsClosing(true);
@@ -45,7 +45,7 @@ export default function Step() {
                 style={{
                   backgroundColor: `${chakra.color}`,
                   border: `${
-                    chakra.color.includes('80') ? '3px solid #FFD700' : 'none'
+                    chakra.color.includes('10') ? '3px solid #FFD700' : 'none'
                   }`,
                 }}
               >

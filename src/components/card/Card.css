@@ -72,8 +72,8 @@ h4 {
   .btn-succes {
     border: none;
     border-radius: 3px;
-    background-color: rgba(45, 153, 45, 0.541);
-    padding: 5px;
+    background-color: #ffd700;
+    padding: 10px;
     cursor: pointer;
   }
 }
