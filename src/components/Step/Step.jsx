@@ -1,10 +1,11 @@
-
-import "../Step/Step.css";
-import Chakras from '../../data/data';
+import "../Step/Step.css"
+import { useLoaderData } from "react-router-dom";
+import Chakras from '../../data//data'
 
 export default function Step () {
 
-    
+    const data= useLoaderData();
+    console.log(data);
 
     return (
     <>
