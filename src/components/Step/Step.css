@@ -52,6 +52,17 @@
   top: 15px;
   z-index: 2;
 }
+
+.stats-container {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px auto;
+  cursor: pointer;
+}
+
+.link-stats {
+  color: inherit;
+}
 @keyframes fadeOutAnimation {
   0% {
     opacity: 1;

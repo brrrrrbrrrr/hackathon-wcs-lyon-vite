@@ -1,11 +1,12 @@
 import '../Step/Step.css';
-import { useLoaderData } from 'react-router-dom';
+import { useLoaderData, Link } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 import Card from '../card/Card';
 import TypeWritter from '../typewritter/TypeWritter';
 import sound from '../../assets/sounds/Emmetelle-Awake.mp3';
 import VolumeOffIcon from '@mui/icons-material/VolumeOff';
 import VolumeMuteIcon from '@mui/icons-material/VolumeMute';
+import QueryStatsIcon from '@mui/icons-material/QueryStats';
 
 export default function Step() {
   const data = useLoaderData();
@@ -97,6 +98,14 @@ export default function Step() {
                   </button>
                 </div>
               ))}
+        </div>
+      )}
+      {!activeModal && activeStep && (
+        <div className='stats-container'>
+          <h5>See amazing stats of well-being</h5>
+          <Link to='/datagraph' className='link-stats'>
+            <QueryStatsIcon />
+          </Link>
         </div>
       )}
 
