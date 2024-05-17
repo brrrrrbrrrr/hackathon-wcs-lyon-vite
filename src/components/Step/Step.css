@@ -32,9 +32,12 @@
   color: white;
   margin-top: 8px;
   margin-bottom: 8px;
-  box-shadow: 4px 4px 10px var(--color); /* Adjusted for a blurred shadow */
+  box-shadow: 4px 4px 10px var(--color);
   z-index: 1;
-  transition: all 0.5s;
+  transition: transform 0.5s; /* Transition de la transformation */
+  background-size: cover; /* Ajuste la taille de l'image pour remplir le bouton */
+  background-repeat: no-repeat;
+  opacity: 0.7;
 }
 
 .button_step:hover {
@@ -102,10 +105,10 @@
   cursor: pointer;
   opacity: 0.7;
   color: initial;
-  margin: 0;
+  margin-top: 40px;
   z-index: 1;
   h6 {
-    font-size: 20px;
+    font-size: 18px;
     font-family: 'Montserrat', sans-serif;
   }
 }
