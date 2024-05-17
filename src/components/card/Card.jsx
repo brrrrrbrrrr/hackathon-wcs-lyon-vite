@@ -23,7 +23,7 @@ const Card = ({ chakra, setActiveModal, activeModal, handleSucces }) => {
         <div className='infos-body_container'>
           <div className='mantra'>{chakra.mantras} </div>
           <div className='body-img_container'>
-            <img src='' alt='' />
+            <img src={chakra.schema} alt='' />
           </div>
         </div>
         <div className='activities-container'>

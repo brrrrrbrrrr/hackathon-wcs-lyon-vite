@@ -14,6 +14,14 @@ import bluelaceagate from '../assets/stones/bluelaceagatestone.webp';
 import amethyst from '../assets/stones/Amethyst.png';
 import clearquartz from '../assets/stones/ClearQuartz.png';
 
+import chakraracine from '../assets/silhouettes/1-racine.png';
+import chakrasacre from '../assets/silhouettes/2-sacre.png';
+import chakrasolaire from '../assets/silhouettes/3-solaire.png';
+import chakracoeur from '../assets/silhouettes/4-coeur.png';
+import chakragorge from '../assets/silhouettes/5-gorge.png';
+import chakraoeil from '../assets/silhouettes/6-3eme-oeil.png';
+import chakracouronne from '../assets/silhouettes/7-couronne.png';
+
 const data = [
   {
     id: 1,
@@ -21,6 +29,7 @@ const data = [
     nameS: 'Muladhara',
     nameEn: 'Root',
     mantras: 'I am grounded. I am strong, supported and abundant',
+    schema: chakraracine,
     infos: '',
     activities: 'Yoga, hiking, gardening',
     suggestedActivities: 'Walking barefoot in nature, Grounding meditation',
@@ -35,6 +44,7 @@ const data = [
     nameS: 'Svadhishtana',
     nameEn: 'Sacral',
     mantras: 'I am creative. I am the creator of all my reality.',
+    schema: chakrasacre,
     infos: '',
     activities: 'Dancing, painting, swimming',
     suggestedActivities: 'Creative writing, Sensual movement practice',
@@ -49,6 +59,7 @@ const data = [
     nameS: 'Manipura',
     nameEn: 'Solar Plexus',
     mantras: 'I am powerful. I am worthy of pursuing my passion and purpose',
+    schema: chakrasolaire,
     infos: '',
     activities: 'Martial arts, cooking, core exercises',
     suggestedActivities: 'Empowerment workshop, Setting and achieving goals',
@@ -63,6 +74,7 @@ const data = [
     nameS: 'Anahata',
     nameEn: 'Heart',
     mantras: 'I am Love. I give love, I am open to love.',
+    schema: chakracoeur,
     infos: '',
     activities:
       'Volunteering, spending time with loved ones, practicing gratitude',
@@ -79,6 +91,7 @@ const data = [
     nameEn: 'Throat',
     mantras:
       'I am expressive. I am in agreement with my truth. I speak with clarity and intention',
+    schema: chakragorge,
     infos: '',
     activities: 'Singing, public speaking, journaling',
     suggestedActivities: 'Throat chakra meditation, Screaming into the void',
@@ -94,6 +107,7 @@ const data = [
     nameEn: 'Third Eye',
     mantras:
       'I am intuitive. I am connected with my spirit and I trust my intuition.',
+    schema: chakraoeil,
     infos: '',
     activities: 'Meditation, stargazing, dream journaling',
     suggestedActivities: 'Visualization exercises, Mindfulness practices',
@@ -109,6 +123,7 @@ const data = [
     nameEn: 'Crown',
     mantras:
       'I am divine. I am one with the divine. I honor the divine in me and around me',
+    schema: chakracouronne,
     infos: '',
     activities: 'Prayer, meditation, studying philosophy',
     suggestedActivities: 'Silent retreat, Connecting with spiritual community',
