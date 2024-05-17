@@ -4,8 +4,12 @@
   top: 40px;
   left: 30px;
   text-align: center;
-  font-family: 'Amatic SC', sans-serif;
+
   font-size: 30px;
+}
+
+.Typewriter__wrapper {
+  font-family: 'Amatic SC', sans-serif;
 }
 
 .background {

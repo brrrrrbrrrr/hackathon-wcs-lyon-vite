@@ -99,6 +99,7 @@
   margin: 20px auto;
   cursor: pointer;
   opacity: 0.7;
+  color: initial;
 }
 
 .sound-container {
@@ -108,11 +109,6 @@
   color: #498073;
 }
 
-h5 {
-  font-family: 'Montserrat', sans-serif;
-  color: 'red';
-  font-size: 12px;
-}
 @keyframes fadeOutAnimation {
   0% {
     opacity: 1;

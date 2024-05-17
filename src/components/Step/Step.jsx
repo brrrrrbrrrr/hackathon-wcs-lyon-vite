@@ -107,7 +107,7 @@ export default function Step() {
       )}
       {!activeModal && activeStep && (
         <div className='stats-container'>
-          <h5>See amazing stats of well-being</h5>
+          <h6>See amazing stats of well-being</h6>
           <Link to='/datagraph' className='link-stats'>
             <QueryStatsIcon />
           </Link>
