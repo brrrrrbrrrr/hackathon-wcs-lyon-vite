@@ -1,3 +1,24 @@
+.background {
+  position: relative;
+}
+.background::after {
+  content: '';
+  background: rgb(148, 154, 191);
+  background: linear-gradient(
+    0deg,
+    rgba(148, 154, 191, 1) 5%,
+    rgba(253, 232, 221, 1) 29%,
+    rgba(246, 247, 247, 1) 76%
+  );
+  height: 100vh;
+  width: auto;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+}
+
 .button_step {
   display: block;
   border-radius: 100%;
@@ -5,17 +26,33 @@
   height: 50px;
   width: 50px;
   margin: 0;
-  background-color: green;
   color: white;
   margin-top: 8px;
   margin-bottom: 8px;
+  filter: blur(2px);
+  box-shadow: 10px 10px 5px 5px grey;
+  z-index: 1; /* S'assurer que le texte est au-dessus du flou */
   transition: all 0.5s;
 }
-
 .button_step:hover {
   transform: scale(1.1);
   animation: all 0.5s;
 }
+
+/* .button_step::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    filter: blur(5px); 
+    background-color: inherit;
+    z-index: -1; /* Place le flou derrière le bouton 
+  }
+   
+  */
 
 .chakras_container {
   display: flex;
@@ -24,15 +61,17 @@
 }
 
 .left {
-  /* Your code here */
+  position: relative;
+  left: 70px;
 }
 
 .middle {
-  /* Your code here */
+  position: relative;
 }
 
 .right {
-  /* Your code here */
+  position: relative;
+  right: 70px;
 }
 
 .step-container {
