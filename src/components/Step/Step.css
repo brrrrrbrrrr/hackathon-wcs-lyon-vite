@@ -46,6 +46,12 @@
   animation: fadeOutAnimation 0.2s forwards; /* Utilisation de "forwards" pour que l'opacité reste à 0 à la fin de l'animation */
 }
 
+.sound-btn {
+  position: absolute;
+  left: 15px;
+  top: 15px;
+  z-index: 2;
+}
 @keyframes fadeOutAnimation {
   0% {
     opacity: 1;

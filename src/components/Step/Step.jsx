@@ -3,6 +3,9 @@ import { useLoaderData } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 import Card from '../card/Card';
 import TypeWritter from '../typewritter/TypeWritter';
+import sound from '../../assets/sounds/Emmetelle-Awake.mp3';
+import VolumeOffIcon from '@mui/icons-material/VolumeOff';
+import VolumeMuteIcon from '@mui/icons-material/VolumeMute';
 
 export default function Step() {
   const data = useLoaderData();
@@ -13,6 +16,8 @@ export default function Step() {
   const [success, setSuccess] = useState(false);
   const [chakraData, setChakraData] = useState(data);
   const [isClosing, setIsClosing] = useState(false);
+  const [activeAudio, setActiveAudio] = useState(false);
+  const [audio, setAudio] = useState(new Audio(sound));
 
   const getElement = (el) => {
     setActiveModal(true);
@@ -40,11 +45,28 @@ export default function Step() {
     setSuccess(true);
   };
 
+  const playSound = () => {
+    if (audio.paused) {
+      setActiveAudio(true);
+      audio.play();
+    } else {
+      setActiveAudio(false);
+      audio.pause();
+    }
+  };
+
   return (
     <div>
       {!activeModal && activeWritter && <TypeWritter />}
       {activeStep && (
         <div className='step-container'>
+          {!activeModal && (
+            <div className='sound-container' onClick={playSound}>
+              {!activeAudio && <VolumeOffIcon className='sound-btn' />}
+              {activeAudio && <VolumeMuteIcon className='sound-btn' />}
+            </div>
+          )}
+
           {!activeModal &&
             chakraData
               .slice()
