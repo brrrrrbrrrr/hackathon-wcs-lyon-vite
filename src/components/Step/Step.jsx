@@ -103,14 +103,14 @@ export default function Step() {
                   </div>
                 ))}
           </div>
-        </div>
-      )}
-      {!activeModal && activeStep && (
-        <div className='stats-container'>
-          <h6>See amazing stats of well-being</h6>
-          <Link to='/datagraph' className='link-stats'>
-            <QueryStatsIcon />
-          </Link>
+          {!activeModal && activeStep && (
+            <div className='stats-container'>
+              <h6>See amazing stats of well-being</h6>
+              <Link to='/datagraph' className='link-stats'>
+                <QueryStatsIcon />
+              </Link>
+            </div>
+          )}
         </div>
       )}
 
