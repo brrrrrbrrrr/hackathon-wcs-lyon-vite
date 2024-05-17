@@ -38,7 +38,7 @@ const data = [
     infos: '',
     activities: '',
     color: '#ffcb06',
-    position: 'rigth',
+    position: 'right',
   },
   {
     id: 4,
