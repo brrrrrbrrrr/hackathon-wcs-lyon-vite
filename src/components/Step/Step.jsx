@@ -60,44 +60,46 @@ export default function Step() {
     <div>
       {!activeModal && activeWritter && <TypeWritter />}
       {activeStep && (
-        <div className='step-container'>
-          {!activeModal && (
-            <div className='sound-container' onClick={playSound}>
-              {!activeAudio && <VolumeOffIcon className='sound-btn' />}
-              {activeAudio && <VolumeMuteIcon className='sound-btn' />}
-            </div>
-          )}
+        <div className='background'>
+          <div className='step-container'>
+            {!activeModal && (
+              <div className='sound-container' onClick={playSound}>
+                {!activeAudio && <VolumeOffIcon className='sound-btn' />}
+                {activeAudio && <VolumeMuteIcon className='sound-btn' />}
+              </div>
+            )}
 
-          {!activeModal &&
-            chakraData
-              .slice()
-              .reverse()
-              .map((chakra) => (
-                <div className='chakras_container' key={chakra.id}>
-                  <button
-                    className='button_step'
-                    onClick={() => getElement(chakra)}
-                    style={{
-                      backgroundColor: chakra.color,
-                      border: chakra.color.includes('10')
-                        ? '3px solid #FFD700'
-                        : 'none',
-                    }}
-                  >
-                    {chakra.id}
-                    <img
-                      style={{ display: 'none' }}
-                      src={chakra.logo}
-                      alt={`Logo ${chakra.nameS}`}
-                    />
-                    <img
-                      style={{ display: 'none' }}
-                      src={chakra.stoneImg}
-                      alt={`Logo ${chakra.stone}`}
-                    />
-                  </button>
-                </div>
-              ))}
+            {!activeModal &&
+              chakraData
+                .slice()
+                .reverse()
+                .map((chakra) => (
+                  <div className='chakras_container' key={chakra.id}>
+                    <button
+                      className='button_step'
+                      onClick={() => getElement(chakra)}
+                      style={{
+                        backgroundColor: chakra.color,
+                        border: chakra.color.includes('10')
+                          ? '3px solid #FFD700'
+                          : 'none',
+                      }}
+                    >
+                      {chakra.id}
+                      <img
+                        style={{ display: 'none' }}
+                        src={chakra.logo}
+                        alt={`Logo ${chakra.nameS}`}
+                      />
+                      <img
+                        style={{ display: 'none' }}
+                        src={chakra.stoneImg}
+                        alt={`Logo ${chakra.stone}`}
+                      />
+                    </button>
+                  </div>
+                ))}
+          </div>
         </div>
       )}
       {!activeModal && activeStep && (
