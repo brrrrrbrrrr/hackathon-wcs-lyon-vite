@@ -4,12 +4,8 @@
 .background::after {
   content: '';
   background: rgb(148, 154, 191);
-  background: linear-gradient(
-    0deg,
-    rgba(148, 154, 191, 1) 5%,
-    rgba(253, 232, 221, 1) 29%,
-    rgba(246, 247, 247, 1) 76%
-  );
+  background: linear-gradient(0deg, rgba(148, 154, 191, 1) 5%, rgb(250, 202, 241) 29%, rgba(246, 247, 247, 1) 76%);
+
   height: 100vh;
   width: auto;
   top: 0;
