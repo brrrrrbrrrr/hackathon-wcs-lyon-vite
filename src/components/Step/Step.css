@@ -30,11 +30,11 @@
   color: white;
   margin-top: 8px;
   margin-bottom: 8px;
-  filter: blur(2px);
-  box-shadow: 10px 10px 5px 5px grey;
-  z-index: 1; /* S'assurer que le texte est au-dessus du flou */
+  box-shadow: 4px 4px 10px var(--color); /* Adjusted for a blurred shadow */
+  z-index: 1;
   transition: all 0.5s;
 }
+
 .button_step:hover {
   transform: scale(1.1);
   animation: all 0.5s;
@@ -98,11 +98,17 @@
   justify-content: space-around;
   margin: 20px auto;
   cursor: pointer;
+  opacity: 0.7;
+  color: initial;
 }
 
-.link-stats {
-  color: inherit;
+.sound-container {
+  color: #949abf;
 }
+.link-stats {
+  color: #498073;
+}
+
 @keyframes fadeOutAnimation {
   0% {
     opacity: 1;
