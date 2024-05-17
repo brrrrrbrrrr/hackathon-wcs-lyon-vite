@@ -79,14 +79,16 @@ export default function Step() {
                       className={`button_step ${chakra.position}`}
                       onClick={() => getElement(chakra)}
                       style={{
-                        backgroundColor: chakra.color,
+                        opacity: 0.7,
+                        backgroundImage: `url(${chakra.logo})`,
+                        backgroundSize: 'cover', // Ajuste la taille de l'image pour remplir le bouton
+                        backgroundRepeat: 'no-repeat',
                         border: chakra.color.includes('10')
                           ? '3px solid #FFD700'
                           : 'none',
                         '--color': `${chakra.color.slice(0, -2)}40`,
                       }}
                     >
-                      {chakra.id}
                       <img
                         style={{ display: 'none' }}
                         src={chakra.logo}
