@@ -15,7 +15,7 @@ const Home = () => {
       <p className="p-content">
         to
         <br />
-        connection<br/>...
+        reconnection<br/>...
       </p>
       <Link to="/chakras">
         <div className="button-container">
