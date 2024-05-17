@@ -1,8 +1,5 @@
-import "./DataGraphStyle.css"
+import './DataGraphStyle.css';
 
-export default function DataGraph(){
-    
-    return(
-        <h1>Exemple de graph</h1>
-    )
+export default function DataGraph() {
+  return <h2>Exemple de graph</h2>;
 }
