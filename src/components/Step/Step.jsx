@@ -76,7 +76,7 @@ export default function Step() {
                 .map((chakra) => (
                   <div className='chakras_container' key={chakra.id}>
                     <button
-                      className='button_step'
+                      className={`button_step ${chakra.position}`}
                       onClick={() => getElement(chakra)}
                       style={{
                         backgroundColor: chakra.color,
