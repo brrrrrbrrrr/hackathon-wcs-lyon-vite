@@ -15,8 +15,8 @@ export default function DataGraph() {
   return (
     <div className='background'>
       <h6 className='graph-h5'>
-        Il y a actuellement <span className='spn-bumber'>{number}</span> qui
-        utilisent notre application, et 100% sont satisfait
+        
+There is currently <span className='spn-bumber'>{number}</span>  who use our application, and 100% are satisfied
       </h6>
       <Link to="/chakras">
         <div className="button-container ">
