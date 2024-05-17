@@ -41,21 +41,27 @@ h2 {
     
   }
   .btn.back{
-    background-color: #272941;
+    background-color: #434773;
     color: #FDE8DD;
   }
     
 
   .back:hover{
     background-color: #FDE8DD;
-    color: #949ABF;
+    color: #272941;
 
   }
 .spn-bumber {
-  color: #949abf;
+  color: rgb(244, 62, 210);
 }
 
 .graph-h5 {
   font-family: 'Montserrat', sans-serif;
-  padding: 30px;
+  font-weight:210;
+  padding: 0px;
+  font-size: 19px;
+  text-align: center;
+  line-height: 28px;
+
+
 }
