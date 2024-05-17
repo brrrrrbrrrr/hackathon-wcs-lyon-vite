@@ -9,7 +9,14 @@
   color: white;
   margin-top: 8px;
   margin-bottom: 8px;
+  transition: all 0.5s;
 }
+
+.button_step:hover {
+  transform: scale(1.1);
+  animation: all 0.5s;
+}
+
 .chakras_container {
   display: flex;
   flex-direction: row-reverse;
@@ -28,6 +35,9 @@
   /* Your code here */
 }
 
+.step-container {
+  animation: fadeInAnimation 1s forwards;
+}
 .fadeIn {
   animation: fadeInAnimation 1s forwards; /* Utilisation de "forwards" pour que l'opacité reste à 1 à la fin de l'animation */
 }

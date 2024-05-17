@@ -14,6 +14,28 @@
   }
 }
 
+h1 {
+  position: relative;
+}
+h1::before {
+  content: '';
+  position: absolute;
+  bottom: 15px;
+  left: 0;
+  height: 2px; /* Hauteur de la ligne */
+  width: 0;
+  background-color: var(--line-color, black);
+  animation: expandLine 2s forwards; /* Animation pour étendre la ligne */
+}
+
+@keyframes expandLine {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
 .modal-container {
   width: 100%;
   height: 100%;

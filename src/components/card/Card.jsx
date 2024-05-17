@@ -14,7 +14,7 @@ const Card = ({ chakra, setActiveModal, activeModal, handleSucces }) => {
           &#x2716;
         </div>
         <div className='title-logo_container'>
-          <h1>{chakra.nameS} </h1>
+          <h1 style={{ '--line-color': chakra.color }}>{chakra.nameS} </h1>
           <div className='logo-card_container'>
             <img src={chakra.logo} alt='' className='logo-chakra' />
           </div>
