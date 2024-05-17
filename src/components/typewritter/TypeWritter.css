@@ -1,5 +1,31 @@
 .intro {
   width: 80%;
+  position: relative;
+  top: 40px;
+  left: 30px;
+  text-align: center;
+  font-family: 'Amatic SC', sans-serif;
+  font-size: 30px;
+}
 
-  margin: 30px auto;
+.background {
+  position: relative;
+}
+.background::after {
+  content: '';
+  background: rgb(148, 154, 191);
+  background: linear-gradient(
+    0deg,
+    rgba(148, 154, 191, 1) 5%,
+    rgba(253, 232, 221, 1) 29%,
+    rgba(246, 247, 247, 1) 76%
+  );
+  height: 100vh;
+  width: auto;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
 }

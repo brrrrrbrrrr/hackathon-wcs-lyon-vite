@@ -83,6 +83,7 @@ export default function Step() {
                         border: chakra.color.includes('10')
                           ? '3px solid #FFD700'
                           : 'none',
+                        '--color': `${chakra.color.slice(0, -2)}40`,
                       }}
                     >
                       {chakra.id}
