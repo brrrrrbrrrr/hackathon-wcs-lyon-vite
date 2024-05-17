@@ -79,10 +79,7 @@ export default function Step() {
                       className={`button_step ${chakra.position}`}
                       onClick={() => getElement(chakra)}
                       style={{
-                        opacity: 0.7,
                         backgroundImage: `url(${chakra.logo})`,
-                        backgroundSize: 'cover', // Ajuste la taille de l'image pour remplir le bouton
-                        backgroundRepeat: 'no-repeat',
                         border: chakra.color.includes('10')
                           ? '3px solid #FFD700'
                           : 'none',
@@ -103,14 +100,14 @@ export default function Step() {
                   </div>
                 ))}
           </div>
-        </div>
-      )}
-      {!activeModal && activeStep && (
-        <div className='stats-container'>
-          <h6>See amazing stats of well-being</h6>
-          <Link to='/datagraph' className='link-stats'>
-            <QueryStatsIcon />
-          </Link>
+          {!activeModal && activeStep && (
+            <div className='stats-container'>
+              <h6>See amazing stats of well-being</h6>
+              <Link to='/datagraph' className='link-stats'>
+                <QueryStatsIcon />
+              </Link>
+            </div>
+          )}
         </div>
       )}
 

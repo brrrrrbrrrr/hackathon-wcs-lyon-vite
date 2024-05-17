@@ -1,67 +1,108 @@
 h2 {
-    text-align:center;
-    font-family: "Amatic SC", sans-serif;
-    color:#7CABA0;
-    font-weight: 200wh;
-    font-style: normal;
-    font-size: 5vh;
-    padding-top: 6rem;
+  text-align: center;
+  font-family: 'Amatic SC', sans-serif;
+  color: #7caba0;
+  font-weight: 200wh;
+  font-style: normal;
+  font-size: 5vh;
+  padding-top: 6rem;
 }
 
 .background {
-    padding: 10vh;
-    width: 100%;
-    height: 100vh;
-    background: rgb(148, 154, 191);
-    background: linear-gradient(0deg, rgba(148, 154, 191, 1) 5%, rgb(250, 202, 241) 29%, rgba(246, 247, 247, 1) 76%);
-      
-  }
-  
+  padding: 10vh;
+  width: 100%;
+  height: 100vh;
+  background: rgb(148, 154, 191);
+  background: linear-gradient(
+    0deg,
+    rgba(148, 154, 191, 1) 5%,
+    rgb(250, 202, 241) 29%,
+    rgba(246, 247, 247, 1) 76%
+  );
+}
+
 /* img{
     border-radius: 30%;
     box-shadow: #3c544e;
 } */
- 
-.button-container{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    margin: 50px 0;
-  }
-  
-  .btn {
-    margin: auto;
-    padding: 1vh;
-    padding-left:5vh;
-    padding-right: 5vh;
-    border-radius: 1vh;
-    border: none;
-    box-shadow: 4px 4px 9px 0px rgba(26, 36, 34, 0.24);
-    font-family: "Montserrat", sans-serif;
-    
-  }
-  .btn.back{
-    background-color: #434773;
-    color: #FDE8DD;
-  }
-    
 
-  .back:hover{
-    background-color: #FDE8DD;
-    color: #272941;
+.button-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 50px 0;
+}
 
-  }
+.btn {
+  margin: auto;
+  padding: 1vh;
+  padding-left: 5vh;
+  padding-right: 5vh;
+  border-radius: 1vh;
+  border: none;
+  box-shadow: 4px 4px 9px 0px rgba(26, 36, 34, 0.24);
+  font-family: 'Montserrat', sans-serif;
+}
+.btn.back {
+  background-color: #434773;
+  color: #fde8dd;
+}
+
+.back:hover {
+  background-color: #fde8dd;
+  color: #272941;
+}
+
+.btn {
+  margin: auto;
+  padding: 1vh;
+  padding-left: 5vh;
+  padding-right: 5vh;
+  border-radius: 1vh;
+  border: none;
+  box-shadow: 4px 4px 9px 0px rgba(26, 36, 34, 0.24);
+  font-family: 'Montserrat', sans-serif;
+}
+.btn.back {
+  background-color: #272941;
+  color: #fde8dd;
+}
+
+.back:hover {
+  background-color: #fde8dd;
+  color: #949abf;
+}
 .spn-bumber {
   color: rgb(244, 62, 210);
 }
 
 .graph-h5 {
   font-family: 'Montserrat', sans-serif;
-  font-weight:210;
+  font-weight: 210;
   padding: 0px;
   font-size: 19px;
   text-align: center;
   line-height: 28px;
+}
 
+.ul-container {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  margin-top: 20px;
+  li {
+    cursor: pointer;
+  }
+}
 
+.active {
+  color: var('--color');
+}
+
+.graph-container {
+  width: 100wh;
+}
+
+.img-graph {
+  width: 100%;
 }
