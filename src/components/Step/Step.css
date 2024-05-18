@@ -44,6 +44,7 @@
 
 .step-container {
   animation: fadeInAnimation 1s forwards;
+  height: 100%;
 }
 .fadeIn {
   animation: fadeInAnimation 1s forwards; /* Utilisation de "forwards" pour que l'opacité reste à 1 à la fin de l'animation */
