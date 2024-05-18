@@ -1,15 +1,10 @@
 /* eslint-disable react/prop-types */
 import './Card.css';
 const Card = ({ chakra, setActiveModal, activeModal, handleSucces }) => {
-  console.log('activeModal ! ', activeModal);
   return (
+    // <div className='background'>
     <div className='modal-container'>
-      <div
-        className={`card-container gradient-border
-       
-
-        `}
-      >
+      <div className={`card-container gradient-border`}>
         <div className='close-modal' onClick={() => setActiveModal(false)}>
           &#x2716;
         </div>
@@ -49,6 +44,7 @@ const Card = ({ chakra, setActiveModal, activeModal, handleSucces }) => {
         </div>
       </div>
     </div>
+    // </div>
   );
 };
 

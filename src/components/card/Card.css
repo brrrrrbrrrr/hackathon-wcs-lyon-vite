@@ -1,6 +1,15 @@
-.card-container {
-  position: absolute;
+.modal-container {
+  width: 100%;
+  height: 100%;
+  color: #7caba0;
+  position: relative;
+  z-index: -10;
+}
 
+.card-container {
+  opacity: 1;
+
+  background-color: initial;
   width: 98%;
   height: 98%;
   top: 1%;
@@ -44,11 +53,6 @@ h1::before {
   to {
     width: 100%;
   }
-}
-.modal-container {
-  width: 100%;
-  height: 100%;
-  color: #7caba0;
 }
 
 .logo-card_container {

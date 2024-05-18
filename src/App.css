@@ -1,0 +1,26 @@
+body {
+  position: relative;
+  max-width: 30em;
+  margin: auto;
+  padding: 20px;
+}
+
+body::after {
+  content: '';
+  background: rgb(148, 154, 191);
+  background: linear-gradient(
+    0deg,
+    rgba(148, 154, 191, 1) 5%,
+    rgb(250, 202, 241) 29%,
+    rgba(246, 247, 247, 1) 76%
+  );
+  height: 100%;
+  width: auto;
+  padding-bottom: 0;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+}

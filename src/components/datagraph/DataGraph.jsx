@@ -59,7 +59,7 @@ export default function DataGraph() {
   }
 
   return (
-    <div className='background'>
+    <div>
       <h6 className='graph-h5'>
         There is currently <span className='spn-bumber'>{number}</span> who use
         our application, and 100% are satisfied
