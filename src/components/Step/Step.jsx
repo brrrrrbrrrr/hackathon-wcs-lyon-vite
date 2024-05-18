@@ -60,7 +60,7 @@ export default function Step() {
     <div>
       {!activeModal && activeWritter && <TypeWritter />}
       {activeStep && (
-        <div className='background'>
+        <div>
           <div className='step-container'>
             {!activeModal && (
               <div className='sound-container' onClick={playSound}>
@@ -100,6 +100,7 @@ export default function Step() {
                   </div>
                 ))}
           </div>
+
           {!activeModal && activeStep && (
             <div className='stats-container'>
               <h6>See amazing stats of well-being</h6>
@@ -110,7 +111,6 @@ export default function Step() {
           )}
         </div>
       )}
-
       {activeModal && (
         <div className={`${activeModal && 'fadeIn'} ${isClosing && 'fadeOut'}`}>
           <Card
