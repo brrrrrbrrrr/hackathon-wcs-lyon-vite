@@ -1,10 +1,11 @@
 .intro {
   width: 80%;
-  position: absolute;
+  position: static;
   top: 40px;
   left: 30px;
   text-align: center;
   height: 100vh;
+
   font-size: 30px;
 }
 
